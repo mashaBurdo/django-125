@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django</title>
+
+
+</head>
+<body>
+    {% if str %}
+        <h2>Строка не сущестует</h2>
+    {% endif %}
+    <h1>{{int | add:3}}</h1>
+    <h2>{{float}}</h2>
+    <h3>{{tuple}}</h3>
+    <h4>{{list | first}}</h4>
+    <h5>{{str| upper}}</h5>
+
+    <ul>
+        {% for elem in data %}
+         <h1> {{ elem}}</h1>
+        {% endfor %}
+    </ul>
+</body>
+</html>

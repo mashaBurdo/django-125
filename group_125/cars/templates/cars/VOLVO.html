@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{%load static %}
+
+<html lang="en">
+{% block page_content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Volvo</title>
+    <link rel="stylesheet" href="{% static 'cars/css/style.css' %}">
+</head>
+<body>
+    <h2> Volvo - comfortable car </h2>
+    <img src="{% static 'cars/img/volvo.jpg' %}" alt="no image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</body>
+</html>
+{% endblock %}
