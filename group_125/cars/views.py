@@ -21,12 +21,12 @@ def info(request):
     return HttpResponse('Info about cars')
 
 def main(request):
-    return render(request, 'cars\index.html', {'cars': lst_car})
+    return render(request, 'cars/index.html', {'cars': lst_car})
 
 def bmw(request):
-    return render(request, 'cars\BMW.html', {'cars': lst_car})
+    return render(request, 'cars/BMW.html', {'cars': lst_car})
 def volvo(request):
-    return render(request, 'cars\VOLVO.html', {'cars': lst_car})
+    return render(request, 'cars/VOLVO.html', {'cars': lst_car})
 def tesla(request):
     return render(request,'cars/tesla.html',{'cars':lst_car})
 
